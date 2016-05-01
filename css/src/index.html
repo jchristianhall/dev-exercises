@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>GoNoodle Exercise</title>
+    <!-- @TODO: Add normalizer, concat + minify with build tool -->
+    <link href="assets/styles/base.css" rel="stylesheet" media="screen" />
+    <link href="assets/styles/tile.css" rel="stylesheet" media="screen" />
   </head>
   <body>
     <div class="u-container">
@@ -10,9 +13,20 @@
         <div class="Tile-add"></div>
         <img src="assets/images/the-penguin-song.png" alt="Penguin Song Thumbnail" class="Tile-thumb">
         <h3 class="Tile-title">The Penguin Song</h3>
-        <div class="Tile-time"></div>
+        <div class="Tile-time">1:28</div>
         <button class="Tile-bottom">Guilded Dancing</button>
       </div>
     </div>
+    <!-- @TODO: Handle FOUT -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ody5fck',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </body>
 </html>
