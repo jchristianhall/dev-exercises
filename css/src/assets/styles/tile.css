@@ -83,7 +83,7 @@
   font-weight: bold;
   display: inline-block;
   color: #6cc18d;
-  border-bottom: 2px solid #6cc18d;
+  border-bottom: 3px solid #6cc18d;
 }
 .TileTitle-time {
   position: absolute;
@@ -112,7 +112,7 @@
   background-color: #fafafa;
 }
 .TileFooter:hover .TileFooter-noHover {
-  transform: translateX(95px);
+  transform: translateX(100px);
   background-color: #fafafa;
 }
 .TileFooter:hover .TileFooter-icon {
@@ -126,7 +126,7 @@
 }
 .TileFooter-hover {
   position: absolute;
-  top: 19px; /* Visually align */
+  top: 18px; /* Visually align */
   left: 15px;
 }
 .TileFooter-icon {
