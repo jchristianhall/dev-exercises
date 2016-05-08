@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   border-radius: 10px;
   background-color: #ffffff;
@@ -16,18 +16,18 @@
 .TileAdd {
   position: absolute;
   z-index: 10;
-  top: -70px;
-  left: -70px;
-  width: 140px;
-  height: 140px;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
   border: 10px solid #ffffff;
   border-radius: 100%;
   background-color: #f5841f;
 }
 .TileAdd-icon {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 12px;
+  bottom: 12px;
   width: 50px;
   height: 50px;
   fill: #ffffff;
@@ -76,34 +76,35 @@
 }
 .TileTitle {
   position: relative;
+  padding: 15px 0 20px 0;
 }
 .TileTitle-text {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   display: inline-block;
-  margin: 10px 0;
   color: #6cc18d;
   border-bottom: 2px solid #6cc18d;
 }
 .TileTitle-time {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 0;
 }
 .TileTitle-timeIcon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   fill: #919191;
 }
 .TileTitle-timeText {
+  position: relative;
+  top: -5px; /* Top align */
   margin-right: 10px;
-  vertical-align: top;
   color: #919191;
 }
 .TileFooter {
   position: relative;
-  margin: 0 -10px -10px -10px; /* Cancel out Tile padding */
-  padding: 10px;
+  margin: 0 -15px -15px -15px; /* Cancel out Tile padding */
+  padding: 10px 15px;
   color: #999999;
   border-top: 1px solid #eeeeee;
 }
@@ -111,7 +112,7 @@
   background-color: #fafafa;
 }
 .TileFooter:hover .TileFooter-noHover {
-  transform: translateX(85px);
+  transform: translateX(95px);
   background-color: #fafafa;
 }
 .TileFooter:hover .TileFooter-icon {
@@ -125,16 +126,16 @@
 }
 .TileFooter-hover {
   position: absolute;
-  top: 18px; /* Visually align */
-  left: 10px;
+  top: 19px; /* Visually align */
+  left: 15px;
 }
 .TileFooter-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .TileFooter-text {
   position: relative;
-  top: -8px; /* Visually align */
+  top: -15px; /* Visually align */
   margin-left: 5px;
 }
 
