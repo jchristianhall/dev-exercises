@@ -1,0 +1,153 @@
+.u-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 0 auto;
+}
+.Tile {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 2px rgba(0,0,0,.1);
+}
+.TileAdd {
+  position: absolute;
+  z-index: 10;
+  top: -70px;
+  left: -70px;
+  width: 140px;
+  height: 140px;
+  border: 10px solid #ffffff;
+  border-radius: 100%;
+  background-color: #f5841f;
+}
+.TileAdd-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+}
+.TileThumb {
+  position: relative;
+}
+.Tile:hover .TileThumb-heart {
+  opacity: 1;
+}
+.TileThumb-heart {
+  position: absolute;
+  z-index: 9;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  opacity: 0;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.TileThumb-heart_inactive {
+  background-color: #ffffff;
+  stroke: #757574;
+}
+.Tilethumb-heart_active {
+  animation: .3s ease-in-out pulse;
+  background-color: #e8262e;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.TileThumb-heartIcon {
+  position: relative;
+  top: 5px; /* Vertically align */
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+.TileThumb-image {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.TileTitle {
+  position: relative;
+}
+.TileTitle-text {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0;
+  color: #6cc18d;
+  border-bottom: 2px solid #6cc18d;
+}
+.TileTitle-time {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.TileTitle-timeIcon {
+  width: 18px;
+  height: 18px;
+  fill: #919191;
+}
+.TileTitle-timeText {
+  margin-right: 10px;
+  vertical-align: top;
+  color: #919191;
+}
+.TileFooter {
+  position: relative;
+  margin: 0 -10px -10px -10px; /* Cancel out Tile padding */
+  padding: 10px;
+  color: #999999;
+  border-top: 1px solid #eeeeee;
+}
+.TileFooter:hover {
+  background-color: #fafafa;
+}
+.TileFooter:hover .TileFooter-noHover {
+  transform: translateX(85px);
+  background-color: #fafafa;
+}
+.TileFooter:hover .TileFooter-icon {
+  animation: .2s ease-in-out .5s grow;
+}
+.TileFooter-noHover {
+  position: relative;
+  z-index: 10;
+  transition: transform .2s ease-in-out .5s;
+  background-color: #ffffff;
+}
+.TileFooter-hover {
+  position: absolute;
+  top: 18px; /* Visually align */
+  left: 10px;
+}
+.TileFooter-icon {
+  width: 30px;
+  height: 30px;
+}
+.TileFooter-text {
+  position: relative;
+  top: -8px; /* Visually align */
+  margin-left: 5px;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+}

@@ -3,11 +3,11 @@
 To give you the best understanding of how I approached this problem, I'll be leaving all of my thoughts from beginning to end here. Todo outlines the steps that I took to do the exercise. Initial thoughts covers the first things I asked myself when I read over the exercise. Final thoughts covers my assumptions and things I would have done in the future to make the solution even better.
 
 ## Todo:
-1. Stub out first pass of markup
-2. Build out component
-    a. Typekit
-    b. Add images
-    c. CSS
+1. ~Stub out first pass of markup~
+2. ~Build out component~
+    a. ~Typekit~
+    b. ~Add images~
+    c. ~CSS~
 3. Set up tooling
     a. Gulp
     b. PostCSS
@@ -24,3 +24,7 @@ To give you the best understanding of how I approached this problem, I'll be lea
 * Will I need js for some of these interactions?
 
 ## Final Thoughts
+* I would have liked to have used a semantic `<button>` for the Tile footer, but given the sliding action, it'd feel really weird. Would the view more also need to be a `<button>` to be semantic?
+* The annotations only covered some of the questions I might have had. I eyeballed things like the padding, shadows, and text sizes.
+* I can't seem to figure out how to get the subtle shoe animation to play in reverse, so that's annoying.
+* I had to use a few magic numbers for the sake of time. I'd refactor those out otherwise.
