@@ -30,6 +30,8 @@
   bottom: 12px;
   width: 50px;
   height: 50px;
+  background: url('../images/icon-plus.svg') center center;
+  background-size: 50px 50px;
 }
 .Tile-link {
   display: block;
@@ -57,12 +59,16 @@
 }
 .Tile-heart_inactive {
   background-color: #ffffff;
-  stroke: #757574;
+}
+.Tile-heart_inactive .Tile-heartIcon {
+  background-image: url('../images/icon-heart-outline.svg');
+}
+.Tile-heart_active .Tile-heartIcon {
+  background-image: url('../images/icon-heart.svg');
 }
 .Tile-heart_active {
   animation: .3s ease-in-out pulse;
   background-color: #e8262e;
-  stroke: #ffffff;
 }
 .Tile-heartIcon {
   position: relative;
@@ -71,6 +77,8 @@
   width: 20px;
   height: 20px;
   margin: 0 auto;
+  background-position: center center;
+  background-size: 20px 20px;
 }
 .Tile-image {
   display: block;
@@ -95,8 +103,11 @@
   right: 0;
 }
 .Tile-timeIcon {
+  display: inline-block;
   width: 20px;
   height: 20px;
+  background: url('../images/icon-clock.svg') center center;
+  background-size: 20px 20px;
 }
 .Tile-timeText {
   position: relative;
@@ -133,8 +144,11 @@
   left: 15px;
 }
 .Tile-shoeIcon {
+  display: inline-block;
   width: 40px;
   height: 40px;
+  background: url('../images/icon-shoe-dancing.svg') center center;
+  background-size: 40px 40px;
 }
 .Tile-guidedDancingText {
   position: relative;
