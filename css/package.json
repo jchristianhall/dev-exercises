@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "CSS exercise.",
   "scripts": {
-    "start": "http-server ./src -d false"
+    "clean": "node_modules/.bin/rimraf ./build",
+    "serve": "webpack-dev-server --host localhost --hot --inline --progress --colors",
+    "start": "npm run clean && npm run webpack && http-server ./build -d false",
+    "webpack": "webpack -p --progress --colors --bail"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,20 @@
   },
   "homepage": "https://github.com/HealthTeacher/dev-exercises#readme",
   "devDependencies": {
-    "http-server": "^0.8.5"
+    "autoprefixer": "^6.3.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.16.1",
+    "http-server": "^0.8.5",
+    "postcss-inline-svg": "^1.4.0",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-notifier": "^1.3.0"
   },
   "dependencies": {
     "normalize.css": "^4.1.1"
