@@ -13,7 +13,7 @@
   background-color: #ffffff;
   box-shadow: 0 4px 2px rgba(0,0,0,.1);
 }
-.TileAdd {
+.Tile-add {
   position: absolute;
   z-index: 10;
   top: -75px;
@@ -24,7 +24,7 @@
   border-radius: 100%;
   background-color: #f5841f;
 }
-.TileAdd-icon {
+.Tile-plusIcon {
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -32,13 +32,13 @@
   height: 50px;
   fill: #ffffff;
 }
-.TileThumb {
+.Tile-thumb {
   position: relative;
 }
-.Tile:hover .TileThumb-heart {
+.Tile:hover .Tile-heart {
   opacity: 1;
 }
-.TileThumb-heart {
+.Tile-heart {
   position: absolute;
   z-index: 9;
   top: 10px;
@@ -50,17 +50,17 @@
   border-radius: 100%;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
-.TileThumb-heart_inactive {
+.Tile-heart_inactive {
   background-color: #ffffff;
   stroke: #757574;
 }
-.Tilethumb-heart_active {
+.Tile-heart_active {
   animation: .3s ease-in-out pulse;
   background-color: #e8262e;
   fill: #ffffff;
   stroke: #ffffff;
 }
-.TileThumb-heartIcon {
+.Tile-heartIcon {
   position: relative;
   top: 5px; /* Vertically align */
   display: block;
@@ -68,78 +68,78 @@
   height: 20px;
   margin: 0 auto;
 }
-.TileThumb-image {
+.Tile-image {
   display: block;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
-.TileTitle {
+.Tile-title {
   position: relative;
   padding: 15px 0 20px 0;
 }
-.TileTitle-text {
+.Tile-titleText {
   font-size: 24px;
   font-weight: bold;
   display: inline-block;
   color: #6cc18d;
   border-bottom: 3px solid #6cc18d;
 }
-.TileTitle-time {
+.Tile-time {
   position: absolute;
   top: 15px;
   right: 0;
 }
-.TileTitle-timeIcon {
+.Tile-timeIcon {
   width: 20px;
   height: 20px;
   fill: #919191;
 }
-.TileTitle-timeText {
+.Tile-timeText {
   position: relative;
   top: -5px; /* Top align */
   margin-right: 10px;
   color: #919191;
 }
-.TileFooter {
+.Tile-footer {
   position: relative;
   margin: 0 -15px -15px -15px; /* Cancel out Tile padding */
   padding: 10px 15px;
   color: #999999;
   border-top: 1px solid #eeeeee;
 }
-.TileFooter:hover {
+.Tile-footer:hover {
   background-color: #fafafa;
 }
-.TileFooter:hover .TileFooter-noHover {
+.Tile-footer:hover .Tile-viewMore {
   transform: translateX(100px);
   background-color: #fafafa;
 }
-.TileFooter:hover .TileFooter-icon {
+.Tile-footer:hover .Tile-shoeIcon {
   animation: .2s ease-in-out .5s grow;
 }
-.TileFooter-noHover {
+.Tile-guidedDancing {
   position: relative;
   z-index: 10;
   transition: transform .2s ease-in-out .5s;
   background-color: #ffffff;
 }
-.TileFooter-hover {
+.Tile-viewMore {
   position: absolute;
   top: 18px; /* Visually align */
   left: 15px;
 }
-.TileFooter-icon {
+.Tile-shoeIcon {
   width: 40px;
   height: 40px;
 }
-.TileFooter-text {
+.Tile-guidedDancingText {
   position: relative;
   top: -15px; /* Visually align */
   margin-left: 5px;
 }
 
-@keyframes grow {
+@keyframes jump {
   0% {
     transform: scale(1);
   }

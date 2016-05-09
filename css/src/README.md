@@ -28,3 +28,4 @@ To give you the best understanding of how I approached this problem, I'll be lea
 * The annotations only covered some of the questions I might have had. I eyeballed things like the padding, shadows, and text sizes.
 * I can't seem to figure out how to get the subtle shoe animation to play in reverse, so that's annoying.
 * I had to use a few magic numbers for the sake of time. I'd refactor those out otherwise.
+* Naming is hard. My first pass was silly. Second pass was a bit better.
