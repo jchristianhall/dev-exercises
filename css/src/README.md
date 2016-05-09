@@ -8,9 +8,9 @@ To give you the best understanding of how I approached this problem, I'll be lea
     a. ~Typekit~
     b. ~Add images~
     c. ~CSS~
-3. Set up tooling
-    a. Gulp
-    b. PostCSS
+3. ~Set up tooling~
+    a. ~Webpack~
+    b. ~PostCSS~
 4. Browserstack free trial
 5. Test test test fix fix fix
 
@@ -30,3 +30,4 @@ To give you the best understanding of how I approached this problem, I'll be lea
 * I had to use a few magic numbers for the sake of time. I'd refactor those out otherwise.
 * Naming is hard. My first pass was silly. Second pass was a bit better.
 * I totally should have squashed all my microcommits.
+* Tried to setup webpack to use fancy tooling, but ran out of time before I could get it working well. Had to do some manual optimisation for the SVGs.

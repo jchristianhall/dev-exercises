@@ -30,7 +30,6 @@
   bottom: 12px;
   width: 50px;
   height: 50px;
-  fill: #ffffff;
 }
 .Tile-link {
   display: block;
@@ -63,7 +62,6 @@
 .Tile-heart_active {
   animation: .3s ease-in-out pulse;
   background-color: #e8262e;
-  fill: #ffffff;
   stroke: #ffffff;
 }
 .Tile-heartIcon {
@@ -99,7 +97,6 @@
 .Tile-timeIcon {
   width: 20px;
   height: 20px;
-  fill: #919191;
 }
 .Tile-timeText {
   position: relative;
