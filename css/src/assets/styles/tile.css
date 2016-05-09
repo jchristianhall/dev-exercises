@@ -32,6 +32,12 @@
   height: 50px;
   fill: #ffffff;
 }
+.Tile-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
 .Tile-thumb {
   position: relative;
 }
@@ -111,7 +117,7 @@
 .Tile-footer:hover {
   background-color: #fafafa;
 }
-.Tile-footer:hover .Tile-viewMore {
+.Tile-footer:hover .Tile-guidedDancing {
   transform: translateX(100px);
   background-color: #fafafa;
 }
