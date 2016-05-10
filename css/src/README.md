@@ -31,3 +31,4 @@ To give you the best understanding of how I approached this problem, I'll be lea
 * Naming is hard. My first pass was silly. Second pass was a bit better.
 * I totally should have squashed all my microcommits.
 * Tried to setup webpack to use fancy tooling, but ran out of time before I could get it working well. Had to do some manual optimisation for the SVGs.
+* I really hate relying on jQuery, but for time's sake and cross browser compatibility, I'm gonna lean on it for the button interaction. In a real production scenario, I'd never use an entire library for one trivial piece of functionality.
